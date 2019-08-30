@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>bai 4 in hinh chu nhat</title>
+</head>
+<body>
+  <script type="text/javascript">
+    var m = 21, n = 7;
+    for (i = 0; i <= n; i++) {
+      if (i === 0 || i === n) {
+        for (j = 0; j <= m; j++) {
+          document.write('* ');
+        }
+        document.write('<br>');
+      } else {
+        for (j = 0; j <= m; j++) {
+          (j === 0 || j === m ) ? document.write('*') : document.write('&ensp; ');
+        }
+        document.write('<br>');
+      }
+    }
+  </script>
+</body>
+</html>

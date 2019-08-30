@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<style type="text/css">
+        td {
+            border: 1px solid black;
+            padding-left: 10px; 
+        }
+</style>
+<body>
+
+
+
+
+<script type="text/javascript">
+    var i , j;
+    var x = 2;
+    var y = 1;
+    document.write('<table>');
+
+    for(i = 0; i < 9; i++) {
+        document.write('<tr>');
+    for (j = 0; j < 8 ;j++) {
+        document.write(`<td> ${x} x ${y} = ${x * y} </td>`);
+        x++;
+    }
+    y++;
+    x=2;
+    document.write('</tr>');
+    }
+    document.write('<table>');
+
+    </script>
+
+</body>
+</html>

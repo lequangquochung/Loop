@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<button id="play" onclick="secretNumber()">Play</button>
+<script type="text/javascript">
+
+	function secretNumber(argument) {
+		var i,sum;		
+		var num = +prompt('nhập vào 1 số từ 0-9','');
+		var n = Math.floor(Math.random()*num);
+		for (i=1; i <= 3; i++) {
+			var x = +prompt('nhập số của bạn','');
+			if (x==n) {
+				alert('Chính Xác');
+				alert('Số bí mật là '+ n);
+				break;
+			}else if(x < n){
+				if (Math.abs(n-x == 1)) {
+					alert('Gần đúng rồi');
+				}else{
+				alert('Bạn đã nhập số nhỏ hơn');
+				}				
+			}else if(x > n){
+				if (Math.abs(n-x == 1)) {
+					alert('Gần đúng rồi');
+				}else{
+				alert('Bạn đã nhập số lớn hơn');
+				}
+			}
+			if(i==3){
+				alert('lượt chơi của bạn kết thúc');
+				alert('Số bí mật là '+ n);
+				break;
+			}
+		}
+		
+	}
+
+
+</script>
+</body>
+</html>

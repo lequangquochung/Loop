@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<script type="text/javascript">
+	var n = prompt('Nhập n','');
+
+	for(var i = 1; i<=n;i++) {
+	document.write(stringsNumber(i)+ ' ');
+}
+
+
+function stringsNumber(n) {
+	var n0=0;
+	var n1=1;
+	var ni=1;
+	var i;
+	if (n==0 || n==1 ) {
+		return n;
+	}else {
+		for(i=2 ; i<n; i++){
+			n0=n1;
+			n1=ni;
+			ni=n0+n1;
+		}
+	}
+return ni;
+}
+
+</script>
+
+</body>
+</html>
